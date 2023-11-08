@@ -24,7 +24,7 @@ Follow these steps to set up and run this project locally on your machine.
 ## Clone the Repository
 
 ```
-git clone <repository_url>
+git clone https://github.com/LaxyaRupeja/Task-Management-Application.git
 ```
 
 ## Install Dependencies
@@ -53,7 +53,7 @@ Use the appropriate command or script to start this project.
 For Backend
 
 ```
-cd backend
+cd Task-Management-Application_Backend/
 npm run server
 (for running it with nodemon)
 npm run start
@@ -63,7 +63,7 @@ npm run start
 For Frontend
 
 ```
-cd frontend
+cd Task-Management-App_Frontend/
 ng serve --open
 (If you've alraedy installed Angular Cli globally in your system)
 
@@ -230,6 +230,8 @@ for starting the backend server you can use method
 
 - Nodemon : `npm run server`
 - Node : `npm run start`
+
+Note -: Backend will run on http://localhost:8080
 
 ---
 
