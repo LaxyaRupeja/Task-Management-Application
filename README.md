@@ -1,5 +1,7 @@
 # Task Management Application - Laxya Rupeja Brief Document
-
+| Frontend | https://task-app-frontend-laxyarupeja.vercel.app/ |
+| --- | --- |
+| Backend | https://quaint-teal-kilt.cyclic.app/ |
 ---
 
 ## Table of Contents
@@ -69,6 +71,11 @@ ng serve --open
 
 npm install -g @angular/cli  (Optional -> if you don't have angular cli installed you   can run this command to install it first)
 ```
+
+## Deployment
+
+I’ve Deployed my both frontend and backend so you directly go to https://task-app-frontend-laxyarupeja.vercel.app/   this URL to access the app
+it might take some time making fetch because backend is deployed on free hosting service
 
 ## Access the Application
 
