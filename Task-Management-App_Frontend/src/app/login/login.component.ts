@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface User {
   _id?: string;
@@ -18,13 +19,15 @@ export class LoginComponent {
     email: '',
     password: '',
   };
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
   onSubmit(): void {
     if (!this.user.email || !this.user.password) return;
+    const self = this;
     this.http.post('http://localhost:8080/api/user/login', this.user).subscribe({
       next(res: any) {
         console.log(res);
         localStorage.setItem('token', res.token);
+        self.router.navigate(['/']);
       },
       error(err) {
         console.log(err);
